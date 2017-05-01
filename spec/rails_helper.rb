@@ -40,8 +40,8 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   
   config.before(:suite) do
-    DatabaseCleaner.clean_with(:trunctation)
-    DatabaseCleaner.strategy = :trunctation
+    DatabaseCleaner.clean_with(:truncation)
+    DatabaseCleaner.strategy = :truncation
   end
   
   config.around(:each) do |example|
